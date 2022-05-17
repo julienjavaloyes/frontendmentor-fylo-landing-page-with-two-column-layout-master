@@ -1,0 +1,21 @@
+@use "../0-abstracts/colors" as c;
+
+article {
+    padding: 5rem 2rem;
+    &:nth-child(2) {
+        background-image: url('../images/bg-curve-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 1000% 400%;
+        background-position: top center;
+        p {
+            text-align: left;
+        }
+    }
+    .illustration {
+        img {
+            min-width: 20rem;
+        }
+
+    }
+}
+

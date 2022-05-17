@@ -1,0 +1,16 @@
+@use "../0-abstracts/colors" as c;
+
+body {
+    button {
+        border: none;
+        padding: 1rem 4rem;
+        border-radius: 0.2rem;
+        //box-shadow: 0.1rem 0.1rem 0.5rem rgb(240, 240, 240);
+        background-color: c.$BrightBlue;
+        color: white;
+        max-width: 17rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

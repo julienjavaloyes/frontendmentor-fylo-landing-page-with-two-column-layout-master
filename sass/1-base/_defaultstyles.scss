@@ -1,0 +1,111 @@
+
+@use  '../0-abstracts/colors' as c;
+
+body {
+    text-align: center;
+    background-color:white;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    input {
+        padding: 0.8rem;
+        &::placeholder {
+            color: c.$LightGray ;
+        }
+    }
+    header {
+        .logotop {
+            height: 2.5rem;
+        }
+        margin-bottom: 2rem;
+    }
+
+    main {
+        padding: 0;
+        .fylolink {
+            color: c.$ModerateCyan ;
+            padding-bottom: 0.3rem;
+            border-bottom: solid 1px c.$ModerateCyan;
+        }
+        h1, h2 {
+            color: c.$VeryDarkBlue;
+        }
+        p {
+            color: c.$DesaturatedBlue ;
+        }
+        .testimony {
+            background-color: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 0 1rem rgb(230, 230, 230);
+            p {
+                &::before {
+                    content: "\201c";
+                    font-size: 4rem;
+                    color: black;
+                    display: block;
+                }
+            }
+            .author {
+                text-align: left;
+                
+                .picture {
+                    img {
+                        width: 3rem;
+                        border-radius: 50%;
+                    }
+                }
+                .author-name {
+                    padding-bottom: 0.4rem;
+                }
+
+            }
+        }
+        .calltoaction {
+            background-color: c.$DesaturatedBlue;
+            p, h2{
+                color: white;
+            }
+            
+            padding: 4rem 2rem;
+        }
+    }
+    footer {
+        background-color: c.$VeryDarkBlue;
+        color: c.$LightGray;
+        text-align: left;
+        .logobottom {
+            filter:  brightness(0) invert(1);
+            img {
+            max-width: 10rem;
+            margin-bottom: 2rem;
+            }
+        }
+        ul {
+            list-style: none;
+            padding-inline-start: 0;
+            margin: 3rem 0;
+            li {
+                margin: 1.5rem 0;
+            }
+        }
+        .social {
+            text-align: center;
+            img {
+                width: 2.5rem;
+                padding: 0.5rem;
+                margin: 2rem 0.5rem;
+                border-radius: 50%;
+                filter: invert(100%);
+                border: solid 1px black;
+            }
+        }
+    }
+}
